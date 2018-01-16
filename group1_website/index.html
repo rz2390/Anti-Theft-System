@@ -1,0 +1,416 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Columbia University EECS E4764 IoT Project Report #0</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<!-- <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span> -->
+							<h1 id="title">Project Name</h1>
+							<p>Columbia University <br>
+								EECS E4764 Fall'17 Internet of Things<br>
+								Intelligent and Connected Systems<br>
+								Team 1 Project Report
+							</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Abstract</span></a></li>
+								<li><a href="#motivation" id="motivation-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Motivation</span></a></li>
+								<li><a href="#system" id="system-link" class="skel-layers-ignoreHref"><span class="icon fa-th">System</span></a></li>
+								<li><a href="#results" id="results-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Results</span></a></li>
+								<li><a href="#references" id="references-link" class="skel-layers-ignoreHref"><span class="icon fa-th">References</span></a></li>
+								<li><a href="#team" id="team-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Our Team</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/zKNPpjy28gY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+								<h2 class="alt">Anti-Theft System for Home Protection</h2>
+								<p>A super safe home entrance mointering system to protect a house.</p>
+								<p>
+We developed a mointering system at the entrance of a house by distinguishing different family members and send message alert to family members when detecting any possible unexpected incomer of home. We primarily used microprocessors including a Raspberry Pi 3 board as well as an Arduino board. The sensors we used are Piezo Vibration sensor and Ultrasonic sensor. This monitoring system has accuracy of detecting stranger up to nearly 100% after proper training of models consisting of all the family members.</p>
+
+
+							<footer>
+								<a href="#motivation" class="button scrolly">Motivation</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="motivation" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Motivation</h2>
+							</header>
+
+							<p align="left">
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/smart.jpeg" alt="" /></a>
+								<header>
+									<h3>Smart Home Concept</h3>
+								</header>
+							</article>
+
+One of the hottest topic in the world of Internet of Things (IOT) is the concept of "Smart Home". Imagine how exciting it could be if you do have a smart home equipped with IOT technology - You may remotely control every piece of domestic applicance via Internet. And even cooler, your electronics could function normally with you absence without consuming too much electricity - you could equip your home with a variety of sensors so as to "monitor" your home environment and consuming very little amount of power and start themselves when detecting corresponding environment changes.
+
+<br>
+<br>
+
+
+Particularly, in this project, the product we constructed is a system composed of a bounch of sensors and microprocessors which can monitor the entrance of home to detect any possible stranger incomer.
+							</p>
+
+
+
+						</div>
+					</section>
+
+
+					<section id="system" class="three">
+						<div class="container">
+
+							<header>
+								<h2>System</h2>
+							</header>
+
+							<p align="left">
+
+
+							</p>
+
+							<h3 align="left">Architecture</h3>
+
+							<p align="left">
+Particulary, in this project, we aim to develop a simple foot step detection system for entrance safety - for example, home protection. The vibration sensor from the embedded system is supposed to detect the identity of the person entering the entrance. Also, if a stranger whose footstep type is distinguishably different from the home member, the sensor should message the user with any possible unexpected entrance.
+
+<br>
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/diagram.png" alt="" /></a>
+								<header>
+									<h3>Flow Diagram</h3>
+								</header>
+							</article>
+Basically, the technology diagram can be seen as shown above. The database we used is MongoDB, which supports storage of JSON document and perfectly fits our traning requriements - We store training data with label being the member's name and footstep data detected by the vibration sensor being the corresponding value.
+
+<br>
+<br>
+
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/arch.png" alt="" /></a>
+								<header>
+									<h3>Technology</h3>
+								</header>
+							</article>
+
+
+
+
+
+
+							</p>
+
+
+							<h3 align="left">Technical Components</h3>
+
+							<p align="left">
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/comp.png" alt="" /></a>
+								<header>
+									<h3>Microprocessors and Sensors</h3>
+								</header>
+							</article>
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/ultra.png" alt="" /></a>
+								<header>
+									<h3>Ultrasonic Sensors</h3>
+								</header>
+							</article>
+
+1. Microprocessor: We chose Raspberry Pi 3 board as our microprocessor because it has graphic interface which is conveient for us to train models. Also, it has more powerful processing ability than usual popular microprocessors such as Arduino or Huzzah. Moreover, the OS in SD card enable us to process the data locally in an easier way. However, compared to Arduino, it cannot read analog signal directly from sensor, for which reason we implement an ADC module for data collection from sensor.
+<br>
+2. Sensors: Piezo Vibration sensor is used to detect the footstep pattern which record both the tensity and pace of footsteps. Ultrasonic sensors are used to detect the firgure of the incomer and are placed with interval in between to avoid interference.
+
+
+							</p>
+
+
+							<h3 align="left">Prototype</h3>
+
+							<p align="left">
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/prototype.jpg" alt="" /></a>
+								<header>
+									<h3>Overall View of System</h3>
+								</header>
+							</article>
+
+As can be seen above, the whole system is built to mimic the entrance door of the house. The wood board is the pathway through which any incomer should walk through after he/she enters the door of house. The ultrasonic group is attached into the door frame to detect the incomer's figure. We can say that both of these two "set of sensors" are functioning for detecting the stranger. Only the incomers who can pass both of these two steps of "identity checking" can be detected as a family member, otherwise, message and email alert will be sent out instantly.
+							</p>
+
+
+
+						</div>
+					</section>
+
+
+					<section id="results" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Results</h2>
+							</header>
+
+							<p align="left">
+
+
+							</p>
+
+Basically, everytime when someone enters the home, an email will be automatically sent to the family member telling them which member it is. The result is virtually a visualized version of the results of our non-linear SVM learning program - It provides you with both the results (which member came in) and the score calculated by the algoritm for each family member's trained model.
+<br>
+<br>
+However, whe there is a stranger came in, the family member will not only receive an email saying "Alert, Stranger might have come in", but also get a message notification which should catch the user attention more quickly by user hopefully.
+
+<br>
+<br>
+
+Below are three diffrent possible email contents which might be sent for member one, member two and sranger respectively.
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/r.png" alt="" /></a>
+								<header>
+									<h3>Member One</h3>
+								</header>
+							</article>
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/m.png" alt="" /></a>
+								<header>
+									<h3>Member Two</h3>
+								</header>
+							</article>
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/s.png" alt="" /></a>
+								<header>
+									<h3>Stranger</h3>
+								</header>
+							</article>
+Bronze Goal: Build up the basic system which can detect the different family members.
+
+Silver Goal: Design a warning-notification system to send message to the family members when there is a stranger entering the door.
+
+Gold Goal: Involve figure detection using ultrasonic to assist our system so as to improve accuracy to close to 100%.
+
+Implement piezo vibration sensor on the ground to increase accuracy, and connect them to the local cloud for data training.
+
+Considering more complex situations, apply more types of sensors to design algorithm trying to distinguish family members and detect stranger.
+
+Design a warning-notification system to send a message to the families if a stranger is detected.
+
+
+
+
+						</div>
+					</section>
+
+					<section id="references" class="three">
+						<div class="container">
+
+							<header>
+								<h2>References</h2>
+							</header>
+
+							<p align="left">
+
+
+                                [1] https://www.raspberrypi.org/community/
+
+
+
+<br>
+[2] http://api.mongodb.com/python/current/tutorial.html
+
+
+<br>
+[3] links from lab scripts
+
+
+
+                            </p>
+
+						</div>
+					</section>
+
+
+				<!-- About Me -->
+					<section id="team" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Our Team</h2>
+							</header>
+
+							<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+								<a href="#" class="image fit"> <img src="images/xz.png" alt="" /></a>
+										<header>
+											<h3>Xiaoxiang Zhang</h3>
+											<p>Xiaoxiang Zhang comes from Beijing, China and is currently pursuing a master degree in Electrical Engineering at Columbia University. He is interested in Internet of Things and Machine Learning. Linkedin: www.linkedin.com/in/xiaoxiang-zhang-m-s</p>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/ml.png" alt="" /></a>
+										<header>
+											<h3>Minghao Li</h3>
+											<p>Minghao Li comes from Hengshui, China and is currently pursuing a master in Electrical Engineering at Columbia University. He is interested in programming and algorithm, planning to develop his career in machine learning. For him, the course of IoT is a very good start combined both the programming and machine learning.
+Linkedin: www.linkedin.com/in/minghaoli1995
+</p>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/rz.png" alt="" /></a>
+										<header>
+											<h3>Ruimin Zhao</h3>
+											<p>Ruimin Zhao comes from Jinan, China and is currently pursuing a master in Electrical Engineering at Columbia University. She is interested in topics such as Internet of Things and Cloud Computing.
+Linkedin: www.linkedin.com/in/ruiminzhao
+</p>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p align="left">
+								<strong>Xiaoxiang Zhang</strong>xz2631@columbia.edu</br>
+								<strong>Minghao Li: </strong>ml4025@columbia.edu</br>
+								<strong>Ruimin Zhao: </strong>rz2390@columbia.edu</br>
+							</br>
+								<strong>Columbia University </strong><a href="http://www.ee.columbia.edu">Department of Electrical Engineering</a><br>
+								<!-- <strong>Class Website:</strong>
+									<a href="https://edblogs.columbia.edu/eecse4764-001-2016-3/">Columbia University EECS E4764 Fall '17 IoT</a></br> -->
+								<strong>Instructor:</strong> <a href="http://fredjiang.com/">Professsor Xiaofan (Fred) Jiang</a>
+							</p>
+
+
+							<!-- <form method="post" action="#">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form> -->
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; IoT Project | All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
